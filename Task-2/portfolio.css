@@ -1,200 +1,271 @@
-html{scroll-behavior: smooth;}
+
 *{
-    padding:0; margin:0; box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: 'Josefin Sans', sans-serif;
+	box-sizing: border-box;
+	/* background-color: #858585; */
 }
-body{
-    background-color: #0a3d62; font-family: 'Poppins', sans-serif;
+.hero{
+	height: 100vh;
+	width: 100%;
+	background-image: url(background.jpeg);
+	background-size: cover;
+	background-position: center;
+	
+}
+/* nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 2px 2px;
+	margin: 4px 4px;
+	border:2px solid black;
+	border-radius: 30px;
+} */
+
+.logo{
+	color: rgb(243, 13, 13);
+	font-size: 35px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+span{
+	color: #0e0d0d;
+}
+.images{
+	height: 50px;
+	width: 50px;
+}
+.forms{
+	/* border: 2px solid black; */
+	margin: 2px 2px;
+}
+.contain1{
+	width: 400px;
+	display: inline-block;
+    margin:45px; 
+	margin-left: 132px; 
+}
+.contain2{
+	margin:45px; 
+	margin-right: 132px; 
+	width: 400px;
+	float: right;
 }
 
-header{
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-header img{
-    width: 10rem;
-    height: auto;
-    border-radius: 50%;
-    animation: pulse 1s infinite ;
-}
-@keyframes pulse {
-    0%{
-        box-shadow: 0 0 0 0px rgba(0,0,0,0.5);
-    }
-    100%{
-        box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
-    }
-    
-}
 
-header h3{
-    color: white;
-    margin: 1.5rem 0;
-    letter-spacing: 0.2rem;
-    font-size: 1.5rem;
+.btn{
+	background-color:#f9004d;
+	color: rgb(250, 245, 245);
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 10px 25px;
+	border-radius: 30px;
+	transition: transform .4s; 
 }
-header p
-{
-    color: white;
+.btn:hover{
+	transform: scale(1.2);
 }
-.arrow{
-    color: black;
-    margin-top:10rem;
-    font-size: 10rem;
-    animation: arrow 2s ease-in-out infinite;
+.content{
+	position: absolute;
+	top: 54%;
+	left:61%;
+	transform: translateY(-50%);
 }
-@keyframes arrow{
-    0%{ color: black;}
-    50%{ color: #0a3d62;}
-    100%{ color: #3c6382;}
-    
+.newslatter input{
+	color: rgb(109, 53, 53);
 }
-.container{
-    width: 100%;
-    min-height: 150vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 0.8fr 0.2fr;
-    gap: 1rem;
-    grid-template-areas: "profile profile skills skills"
-                          "edu edu edu lang"
-                          "contact exp exp exp"
-                          "footer footer footer footer";
-                          padding: 2rem;
+h1{
+	color: #1f1e1e;
+	margin: 20px -6px 20px;
+	font-size: 75px;
 
 }
-.profile{
-    background: white;
-    color:black;
-    padding: 2rem;
-    grid-area: profile;
+h3{
+	color: white;
+	font-size: 25px;
+	margin-bottom: 50px;
 }
-.skills{
-    background: #3c6382;
-    color:white;
-    padding: 2rem;
-    grid-area: skills;
+h4{
+	color:black;
+	letter-spacing: 2px;
+	font-size: 20px;
+	margin-bottom: 36px;
 }
-.edu{
-    background:#3c6382 ;
-    color: white;
-    padding: 2rem;
-    grid-area: edu;
+.newslatter form input:first-child{
+	display: inline-block;
+	width: 100%;
+	padding: 14px 130px 14px 15px;
+	border: 2px solid #f9004d;
+	outline: none;
+	border-radius: 30px;
 }
-.lang{
-    background: white;
-    color: #0a3d62;
-    padding: 2rem;
-    grid-area: lang;
-}
-.contact{
-    background: white;
-    color: #0a3d62;
-    padding: 2rem;
-    grid-area: contact;
-}
-.exp{
-    background:#3c6382;
-    color:white;
-    padding: 2rem;
-    grid-area: exp;
-}
-footer{
-    color: white;
-    background: #3c6382;
-    padding: 2rem;
-    grid-area: footer;
-}
-h2{
-    margin-bottom: 1rem;
-
-}
-.profile p{
-    padding: 0.3rem 1rem;
-    text-align: justify;
-    line-height: 2.2rem;
-}
-.profile a{
-    text-decoration: none;
-    padding: 0.5rem 0.7rem;
-    background: #0a3d62;
-    color: white;
-}
-.skills div{
-    width: 100%;
-    padding: 0.5rem 1rem;
-
-}
-.skills div progress[value]{
-    width: 100%;
-    height: 1rem;
-}
-.edu h2{
-    letter-spacing: 0.1rem;
-}
-.edu p{
-    padding: 0.3rem 1rem;
-    text-align: justify;
-    line-height: 2.2rem;
-}
-.edu a{
-    text-decoration: none;
-    padding: 0.5rem 0.7rem;
-    background:white;
-    color: black;
-    font-weight: bold;
-}
-.lang ul{
-    margin: 1rem 0;
-    padding: 0.3rem 1rem;
-}
-.lang ul li{
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-.contact div i{
-    margin-right: 0.2rem;
-}
-.contact p{
-    margin: 1rem 0;
-    cursor: pointer;
-}
-.exp p{
-    padding: 0.3rem 1rem;
-    text-align: justify;
-    line-height: 2.2rem;
-}
-footer i{
-    background: white;
-    color: black;
-    padding: 0.5rem;
-    margin: 1rem 0.2rem;
-    border-radius: 50%;
-    transition: 0.4s;
-}
-footer i:hover{
-    background: #0a3d62;
-    color: white;
-    cursor:pointer;
-}
-footer{
-    text-align: center;
+.newslatter form input:last-child{
+	position: absolute;
+	display: inline-block;
+	outline: none;
+	border: none;
+	padding: 10px 30px;
+	border-radius: 30px;
+	background-color:#f9004d;
+	color: rgb(248, 246, 243);
+	box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585;
+	top: 6px;
+	right: 6px; 
 }
 
-@media only screen and (max-width: 770px){
-    .container{
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.8fr 0.6fr 1fr 0.6fr 0.5fr 0.8fr 0.1fr;
-        grid-template-areas: "profile"
-        "skills"
-        "edu"
-        "lang"
-        "contact"
-        "exp"
-        "footer";
-    }
+.about{
+	width: 100%;
+	padding: 100px 0px;
+	background-color: #191919;
 }
+.about img{
+	height: auto;
+	width: 430px;
+	border-radius: 80px;
+}
+.about-text{
+	width: 550px;
+}
+.main{
+	width: 1130px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.about-text h2{
+	color: rgb(245, 7, 7);
+	font-size: 75px;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.about-text h5{
+	color: rgb(245, 7, 7);
+	letter-spacing: 2px;
+	font-size: 22px;
+	margin-bottom: 25px;
+	text-transform: capitalize;
+}
+.about-text p{
+	color: #fcfc;
+	letter-spacing: 1px;
+	line-height: 28px;
+	font-size: 18px;
+	margin-bottom: 45px;
+}
+button{
+	background-color:#990303;
+	color: rgb(12, 12, 12);
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 13px 30px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+button:hover{
+	background-color: transparent;
+	border: 2px solid #f6f3f4;
+	cursor: pointer;
+}
+
+.service{
+	background: #222122;
+	width: 100%;
+	padding: 100px 0px;
+}
+.title h2{
+	color: white;
+	font-size: 75px;
+	width: 1130px;
+	margin: 30px auto;
+	text-align: center;
+}
+.box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 400px;
+}
+.card{
+	height: 365px;
+	width: 335px;
+	padding: 20px 35px;
+	background: rgba(146, 99, 146, 0.8);
+	border-radius: 20px;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.card i{
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin: 25px 0px;
+	color: #f6f3f4;
+
+}
+h5{
+	color: white;
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+.pra p{
+	color: rgba(197, 85, 197, 0.8);
+	font-size: 16px;
+	line-height: 27px;
+	margin-bottom: 25px;
+}
+.card .button{
+	background-color:#fbf9f9;
+	color: rgb(216, 147, 147);
+	text-decoration: none;
+	border: 2px solid transparent;
+	font-weight: bold;
+	padding: 9px 22px;
+	border-radius: 30px;
+	transition: .4s; 
+}
+.card .button:hover{
+	background-color: transparent;
+	border: 2px solid #fcfafb;
+	cursor: pointer;
+	color: white;
+}
+
+
+.social{
+	display: flex;
+}
+.social a{
+	width: 45px;
+	height: 45px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:  #f9004d;
+	border-radius: 50%;
+	margin: 22px 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+.social a:hover{
+	transform: scale(1.3);
+	transition: .3s;
+}
+.end{
+	position: absolute;
+	color:#f9004d;
+	bottom: 35px;
+	font-size: 14px; 
+}
+
+
+
 

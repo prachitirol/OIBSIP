@@ -17,7 +17,7 @@ body{
     background: url(https://thumbs.dreamstime.com/b/coffee-background-space-text-85121087.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position:center ;
+    background-position:center;
     position: relative;
     z-index: 2;
     animation: slide 1s ease-in-out;

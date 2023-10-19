@@ -4,7 +4,7 @@
 	margin: 0;
 	font-family: 'Josefin Sans', sans-serif;
 	box-sizing: border-box;
-	/* background-color: #858585; */
+	 background-color: #858585; 
 }
 .hero{
 	height: 100vh;

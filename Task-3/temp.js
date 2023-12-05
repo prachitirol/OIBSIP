@@ -8,7 +8,7 @@ function convert() {
       convertedTemperature = temperature * 9 / 5 + 32;
       convertedUnit = "Fahrenheit";
     } else {
-      convertedTemperature = (temperature - 32) * 5 / 9;
+      convertedTemperature = 5/9 * (temperature - 32) ;
       convertedUnit = "Celsius";
     }
   

@@ -7,6 +7,8 @@
     --text: 1.5rem;
     --head: calc(1rem + 5vw);
 }
+
+
 body{
     font-family: 'Poppins', sans-serif;
 
